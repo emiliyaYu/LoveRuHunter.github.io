@@ -28,7 +28,6 @@ body {
     min-width: 320px;
     background: #fff;
     border-bottom: 1px solid #D9FFF5;
-    overflow: auto;
 }
 .header-main {
     display: flex;
@@ -36,6 +35,7 @@ body {
     margin: 0;
     background: none;
     height: 88px;
+    width: 100%;
 }
 .header-main__item {
     display:flex;
@@ -203,7 +203,14 @@ p {
     margin-left: 36px;
     width: 100%;
 }
-
+.header-main-logo {
+    display:flex;
+    align-items:center;
+}
+.header-main-item {
+    display:flex;
+    align-items:center;
+}
 
 @media screen and (min-width: 320px) and (max-width: 767px){
 .header__divider--first {
@@ -235,12 +242,18 @@ body {
     .header-main__item:not(:last-child):not(:first-child):not(:nth-last-child(2)){
         display:none;
     }
+    .header-main__item--profile {
+        display: none;
+    }
     .header__divider--third {
         display: none;
     }
     .main-pic {
-        min-width: 320px;
-        max-width: 360px;
+        max-height: 384px;
+        max-width: 532px
+    }
+    .header-main-item {
+        justify-content: flex-end;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1120px) {
