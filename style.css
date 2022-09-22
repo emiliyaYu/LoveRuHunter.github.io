@@ -120,6 +120,7 @@ body {
     margin-left: 16px;
     color: #7E7E82;
     font-family: "TT Lakes r", "sans-serif";
+    overflow-x: auto;
 }
 .main-all__item:first-child {
     display: flex;
@@ -340,4 +341,5 @@ body {
         max-width: 532px;
         margin-left: 36px;
     }
+
 }
