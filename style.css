@@ -122,7 +122,7 @@ body {
     color: #7E7E82;
     font-family: "TT Lakes r", "sans-serif";
     overflow-x: scroll;
-
+    scrollbar-width: none;
 }
 .main-all::-webkit-scrollbar {
     display: none;
